@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204, 193, 193);
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(112, 103, 103);
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .nav1{
+    color: white;
+    font-size: 26px;;
+    display: flex;
+    justify-content: center;
+  }
+  .navword{
+    margin: 30px;
+  }
+  
+  /* Style the content */
+  .content {
+    background-color: #ddd;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+
+
+
+  
+  /* Style the header */
+  .header {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  .nav {
+    float: left;
+    width: 30%;
+    height: 200px; /* only for demonstration, should be removed */
+    background: lightblue;
+    padding: 20px;
+  }
+
+  .nav20{
+    background-color: #ccc;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Style the list inside the menu */
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .article {
+    float: left;
+    padding: 20px;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 6900px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  .section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }

@@ -1,17 +1,40 @@
 import "./App.css";
-import { useEffect, useState } from "react";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./utils/firebase/auth";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
+import Wireframe from "./pages/Wireframe";
+import Profile from "./pages/Api";
+import Tasks from "./pages/Tasks";
+import Flowchart from "./pages/Flowchart";
+import Members from "./pages/Members";
+import Functional from "./pages/Functional";
+import Api from "./pages/Api";
+import Logout from "./pages/Logout";
 
-import React from "react";
-import axios from "axios";
-
-const App = () => {
-  const [user, setUser] = useState({});
-
-  useEffect(() => {}, []);
-
-  return <div></div>;
-};
+function App() {
+  return (
+    //Main router that allows the routes to connect and work!
+    <BrowserRouter>
+      <div className="App">
+        {/* Make sure there's only ONE route that show up at a time  */}
+        <Routes>
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Signin />} />
+          <Route path="/wireframe" element={<Wireframe />} />
+          {/* <Route path = "/portfolio" element = {<Portfolio/>}/> */}
+          <Route path="/flowchart" element={<Flowchart />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/functional" element={<Functional />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/members" element={<Members />} />
+          <Route path="/api" element={<Api />} />
+          <Route path="/logout" element={<Logout />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
+}
 
 export default App;
