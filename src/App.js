@@ -1,4 +1,5 @@
 import "./App.css";
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Signin from "./pages/Signin";
@@ -38,5 +39,13 @@ function App() {
     </BrowserRouter>
   );
 }
+=======
+
+import React from "react";
+
+const App = () => {
+  return <div></div>;
+};
+>>>>>>> 5d6f271738a726b0424d97ff8bec6206ff1686b9
 
 export default App;
