@@ -15,10 +15,27 @@ function App() {
   }, [user]);
   return (
     <div className="App">
-      <h1>Firebase</h1>
-      <button>Connect MetaMask Wallet</button>
-      {!user && <button onClick={signUpWithGoogle}>Sign in with google</button>}
-      {user && <button onClick={handleLogout}>Logout</button>}
+      <button
+        style={{ border: "2px solid black", margin: "20px", padding: "10px" }}
+      >
+        Connect MetaMask Wallet
+      </button>
+      {!user && (
+        <button
+          style={{ border: "2px solid black", margin: "20px", padding: "10px" }}
+          onClick={signUpWithGoogle}
+        >
+          Sign in with google
+        </button>
+      )}
+      {user && (
+        <button
+          style={{ border: "2px solid black", margin: "20px", padding: "10px" }}
+          onClick={handleLogout}
+        >
+          Logout
+        </button>
+      )}
     </div>
   );
 }
