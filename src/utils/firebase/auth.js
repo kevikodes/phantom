@@ -19,3 +19,13 @@ export const handleLogout = async () => {
     console.log(error.message);
   }
 };
+
+//Connect meta mask wallet
+export const handleAuth = async (connectWallet) => {
+  try {
+    await connectWallet("injected");
+    await signInWithPopup(auth, provider);
+  } catch (error) {
+    console.log(error);
+  }
+};

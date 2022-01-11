@@ -2,7 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { auth, provider } from "./utils/firebase/firebase.config";
 import { onAuthStateChanged, signInWithPopup } from "firebase/auth";
-import { signUpWithGoogle, handleLogout } from "./utils/firebase/auth";
+import { handleAuth, handleLogout } from "./utils/firebase/auth";
 
 //Import thirdweb dependencies
 import { useWeb3 } from "@3rdweb/hooks";
@@ -13,7 +13,7 @@ function App() {
   const [user, setUser] = useState({});
 
   //Use thirdweb hook
-  const { address, chainId, connectWallet } = useWeb3();
+  const { address, connectWallet } = useWeb3();
 
   //Check for user logged in or out
   useEffect(() => {
@@ -24,43 +24,40 @@ function App() {
     return unsub;
   }, [user]);
   return (
-    <div className="App">
+    <div style={{ textAlign: "center" }}>
       {!user && (
         <>
+          <h1
+            style={{ fontSize: "1.4rem", padding: "20px", fontWeight: "800" }}
+          >
+            Login
+          </h1>
           <button
             style={{
-              border: "2px solid black",
               margin: "20px",
-              padding: "10px",
-            }}
-            onClick={signUpWithGoogle}
-          >
-            Sign in with google
-          </button>
-          <button
-            style={{
               border: "2px solid black",
-              margin: "20px",
-              padding: "10px",
+              padding: "8px",
             }}
-            onClick={() => connectWallet("injected")}
+            onClick={() => handleAuth(connectWallet)}
           >
-            Connect MetaMask Wallet
+            Connect Wallet!
           </button>
+          <br />
+          <span>You will also be prompted to log in to google**</span>
         </>
       )}
       {user && (
-        <button
-          style={{ border: "2px solid black", margin: "20px", padding: "10px" }}
-          onClick={handleLogout}
-        >
-          Logout
-        </button>
-      )}
-
-      {address && user && (
         <>
-          <div>Address: {address}</div>
+          <h1>Welcome, {user.displayName}</h1>
+          <button onClick={handleLogout}>Logout</button>
+        </>
+      )}
+      {!address && user && (
+        <>
+          <h1>Please connect Your wallet!</h1>
+          <button onClick={() => handleAuth(connectWallet)}>
+            Connect Wallet
+          </button>
         </>
       )}
     </div>
