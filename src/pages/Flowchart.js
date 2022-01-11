@@ -15,10 +15,12 @@ function Flowchart() {
           <h3>FlowChart</h3>
         </div>
 
-        <section>
-          <img src="./images/7.png" />
 
-          {/* <div className="article">
+        <section>
+ <div className="article">
+          <img src="./images/7.png" />
+</div>
+          {/*
           <p>User Stories / Reasoning</p>
           <p>Why?:</p>
 
@@ -65,7 +67,7 @@ function Flowchart() {
       
       </section> */}
 
-          <Footer />
+       
         </section>
       </div>
     </>

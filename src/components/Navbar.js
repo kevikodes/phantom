@@ -1,9 +1,7 @@
 import "../styles/new.css";
 
 function Navbar() {
-  const logout = async () => {
-    window.location = "/";
-  };
+ 
 
   const about = async () => {
     window.location = "/about";
@@ -59,9 +57,7 @@ function Navbar() {
         <a href="/members" className="navword" onClick={members}>
           About
         </a>
-        <a href="logout" className="navword" onClick={logout}>
-          Logout
-        </a>
+     
         
       </div>
     </>

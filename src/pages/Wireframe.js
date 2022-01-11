@@ -17,9 +17,7 @@ function Functional() {
 
       <section>
         <div className="article">
-     
-
-          <p>Team One - October Cohort</p> */}
+         
           <p>
             <img src="./images/1.png" />
           </p>

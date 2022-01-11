@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import moment from "moment";
 import Navbar from "../components/Navbar";
-
+import '../styles/new.css'
 
 const options = {
   method: "GET",
@@ -54,7 +54,7 @@ function Api() {
   console.log(coinEvents);
   console.log(coins);
   return (
-    <div className="App">
+    <div className="Article">
       <Navbar />
       
       <div className="header">
