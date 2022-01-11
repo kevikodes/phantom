@@ -15,7 +15,9 @@ import Logout from "./pages/Logout";
 function App() {
   return (
     //Main router that allows the routes to connect and work!
+
     <BrowserRouter>
+      <h1>This is the progress branch</h1>
       <div className="App">
         {/* Make sure there's only ONE route that show up at a time  */}
         <Routes>
