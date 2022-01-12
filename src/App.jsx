@@ -25,6 +25,12 @@ function App() {
   }, [user]);
 
   //Check address
+  useEffect(() => {
+    if (address) {
+      setWalletAddress(address);
+    }
+    console.log(address);
+  }, [address]);
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -50,10 +56,10 @@ function App() {
           <span>You will also be prompted to log in to google**</span>
         </>
       )}
-      {user && address && (
+      {user && walletAddress && (
         <>
           <h1>Welcome, {user.displayName}</h1>
-          <h2>Your address is {address}</h2>
+          <h2>Your address is {walletAddress}</h2>
           <button onClick={handleLogout}>Logout</button>
         </>
       )}
