@@ -18,7 +18,7 @@ function Flowchart() {
 
         <section>
  <div className="article">
-          <img src="./images/7.png" />
+          <img src="./images/7.png"  alt="Bitcoin info" />
 </div>
           {/*
           <p>User Stories / Reasoning</p>

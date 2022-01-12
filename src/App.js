@@ -8,6 +8,9 @@ import Flowchart from "./pages/Flowchart";
 import Members from "./pages/Members";
 import Functional from "./pages/Functional";
 import Api from "./pages/Api";
+import Api1 from "./pages/Api1";
+import Api2 from "./pages/Api2";
+import Api3 from "./pages/Api3";
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
           <Route path="/functional" element={<Functional />} />
           <Route path="/members" element={<Members />} />
           <Route path="/api" element={<Api />} />
+          <Route path="/api1" element={<Api1 />} />
+          <Route path="/api2" element={<Api2 />} />
+          <Route path="/api3" element={<Api3 />} />
         </Routes>
       </div>
     </BrowserRouter>

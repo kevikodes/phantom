@@ -14,7 +14,7 @@ function Tasks() {
         <h3>Task Chart, Initial Design</h3>
       </div>
 
-      <img src="./images/5.png" />
+      <img src="./images/5.png"  alt="Bitcoin info" />
      
       <Footer />
     </>

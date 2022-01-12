@@ -21,7 +21,7 @@ function Functional() {
 
           <p>Team One - October Cohort</p> */}
           <p>
-            <img src="./images/6.png" />
+            <img src="./images/6.png"  alt="Bitcoin info" />
           </p>
 
           {/* <p>
