@@ -20,9 +20,12 @@ function App() {
     const unsub = onAuthStateChanged(auth, (user) => {
       setUser(user);
     });
-    console.log(user);
+
     return unsub;
   }, [user]);
+
+  //Check address
+
   return (
     <div style={{ textAlign: "center" }}>
       {!user && (
@@ -46,9 +49,10 @@ function App() {
           <span>You will also be prompted to log in to google**</span>
         </>
       )}
-      {user && (
+      {user && address && (
         <>
           <h1>Welcome, {user.displayName}</h1>
+          <h2>Your address is {address}</h2>
           <button onClick={handleLogout}>Logout</button>
         </>
       )}
