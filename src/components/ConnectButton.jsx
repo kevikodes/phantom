@@ -60,7 +60,14 @@ const ConnectButton = () => {
         </>
       )}
 
-      {address && user && <h1>Welcome {user.displayName}</h1>}
+      {address && user && (
+        <>
+          <h1>Welcome {user.displayName}</h1>
+          <p>
+            Your wallet address is: <br /> {address}
+          </p>
+        </>
+      )}
     </div>
   );
 };
