@@ -2,7 +2,7 @@ import { signInWithPopup, signOut } from "firebase/auth";
 import { auth, provider } from "./firebase.config";
 
 //Sign in with google
-export const signUpWithGoogle = async () => {
+export const signInWithGoogle = async () => {
   try {
     console.log("sign up with google");
     await signInWithPopup(auth, provider);

@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { auth } from "../utils/firebase/firebase.config";
-import { onAuthStateChanged, signInWithPopup } from "firebase/auth";
-import { handleAuth, handleLogout } from "../utils/firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
+import { handleAuth, signInWithGoogle } from "../utils/firebase/auth";
 
 //Import thirdweb dependencies
 import { useWeb3 } from "@3rdweb/hooks";
@@ -31,41 +31,36 @@ const ConnectButton = () => {
     }
     console.log(address);
   }, [address]);
+
   return (
     <div style={{ textAlign: "center" }}>
-      {!user && (
+      {!user && !address && (
         <>
-          <button
-            style={{
-              margin: "20px",
-              border: "2px solid black",
-              padding: "8px",
-            }}
-            onClick={() => handleAuth(connectWallet)}
-          >
-            Connect Wallet!
-          </button>
+          <span>Please connect Your wallet!</span>
           <br />
-          <span style={{ color: "red" }}>
-            *You will also be prompted to log in to google*
-          </span>
-        </>
-      )}
-      {user && walletAddress && (
-        <>
-          <h1>Welcome, {user.displayName}</h1>
-          <h2>Your address is {walletAddress}</h2>
-          <button onClick={handleLogout}>Logout</button>
-        </>
-      )}
-      {!address && user && (
-        <>
-          <h1>Please connect Your wallet!</h1>
           <button onClick={() => handleAuth(connectWallet)}>
             Connect Wallet
           </button>
         </>
       )}
+      {user && !address && (
+        <>
+          <span>Please connect your wallet!</span>
+          <br />
+          <button onClick={() => connectWallet("injected")}>
+            Connect Wallet
+          </button>
+        </>
+      )}
+      {!user && address && (
+        <>
+          <span>Please sign in!</span>
+          <br />
+          <button onClick={signInWithGoogle}>Sign In with Google</button>
+        </>
+      )}
+
+      {address && user && <h1>Welcome {user.displayName}</h1>}
     </div>
   );
 };
