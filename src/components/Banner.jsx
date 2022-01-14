@@ -4,7 +4,9 @@ import "./banner.css";
 const Banner = () => {
   return (
     <div className="banner">
-      <div className="bannerText">This is the banner text</div>
+      <marquee className="bannerText">
+        This is the banner text This is the banner text This is the banner text
+      </marquee>
     </div>
   );
 };
