@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.css";
+import { NavLink } from "react-router-dom";
 
 import {
   handleAuth,
@@ -12,14 +13,24 @@ const Navbar = ({ user, walletAddress }) => {
   return (
     <div className="navbar">
       <div className="navbarLeft">
-        <h1 className="logo">Phantom</h1>
+        <NavLink to="/" className="logo">
+          Phantom
+        </NavLink>
       </div>
       <div className="navbarRight">
         <div className="navMenu">
-          <div className="navMenuItem">Home</div>
-          <div className="navMenuItem">Whitepaper</div>
-          <div className="navMenuItem">Blog</div>
-          <div className="navMenuItem">FAQ's</div>
+          <NavLink to="/" className={`navMenuItem`}>
+            Home
+          </NavLink>
+          <NavLink to="/roadmap" className={`navMenuItem`}>
+            Roadmap
+          </NavLink>
+          <NavLink to="/news" className={`navMenuItem`}>
+            News
+          </NavLink>
+          <NavLink to="/faqs" className={`navMenuItem`}>
+            FAQ's
+          </NavLink>
 
           {!user && !walletAddress && (
             <>

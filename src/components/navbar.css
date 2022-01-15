@@ -48,6 +48,10 @@
   font-weight: 600;
 }
 
+.active {
+  color: lime;
+}
+
 .navMenuItem:hover {
   opacity: 0.8;
   color: lime;
