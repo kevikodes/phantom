@@ -15,16 +15,18 @@ export const signInWithGoogle = async () => {
 export const handleLogout = async () => {
   try {
     await signOut(auth);
+    window.location.reload();
   } catch (error) {
     console.log(error.message);
   }
 };
 
-//Connect meta mask wallet
+//Connect meta mask wallet and google
 export const handleAuth = async (connectWallet) => {
   try {
     await connectWallet("injected");
     await signInWithPopup(auth, provider);
+    window.location.reload();
   } catch (error) {
     console.log(error);
   }

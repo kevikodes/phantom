@@ -25,7 +25,9 @@ const Navbar = ({ user, walletAddress }) => {
             <>
               <div
                 className="navMenuItem loginBtn"
-                onClick={() => handleAuth(connectWallet)}
+                onClick={() => {
+                  handleAuth(connectWallet);
+                }}
               >
                 Login
               </div>
@@ -33,7 +35,14 @@ const Navbar = ({ user, walletAddress }) => {
           )}
           {!user && walletAddress && (
             <>
-              <div className="navMenuItem loginBtn" onClick={signInWithGoogle}>
+              <i class="fas fa-wallet navMenuItem navAvatar"></i>
+
+              <div
+                className="navMenuItem loginBtn"
+                onClick={() => {
+                  handleAuth(connectWallet);
+                }}
+              >
                 Sign In with Google
               </div>
             </>
@@ -42,7 +51,9 @@ const Navbar = ({ user, walletAddress }) => {
             <>
               <div
                 className="navMenuItem loginBtn"
-                onClick={() => handleAuth(connectWallet)}
+                onClick={() => {
+                  connectWallet("injected");
+                }}
               >
                 Connect Wallet!
               </div>
@@ -50,12 +61,17 @@ const Navbar = ({ user, walletAddress }) => {
           )}
           {walletAddress && user && (
             <>
-              <i className="fas fa-user-circle navAvatar navMenuItem"></i>
-              <div
-                className="navMenuItem loginBtn"
-                onClick={() => handleLogout(disconnectWallet)}
-              >
-                Logout
+              <div className="rightNavbar">
+                <i className="fas fa-user-circle navAvatar navMenuItem"></i>
+                <i class="fas fa-wallet navMenuItem navAvatar"></i>
+                <div
+                  className="navMenuItem loginBtn"
+                  onClick={() => {
+                    handleLogout(disconnectWallet);
+                  }}
+                >
+                  Logout
+                </div>
               </div>
             </>
           )}
