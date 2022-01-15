@@ -1,10 +1,14 @@
 import React from "react";
 import "./navbar.css";
 
-import { handleAuth, signInWithGoogle } from "../utils/firebase/auth";
+import {
+  handleAuth,
+  handleLogout,
+  signInWithGoogle,
+} from "../utils/firebase/auth";
 import { useWeb3 } from "@3rdweb/hooks";
 const Navbar = ({ user, walletAddress }) => {
-  const { connectWallet } = useWeb3();
+  const { connectWallet, disconnectWallet } = useWeb3();
   return (
     <div className="navbar">
       <div className="navbarLeft">
@@ -47,6 +51,12 @@ const Navbar = ({ user, walletAddress }) => {
           {walletAddress && user && (
             <>
               <i className="fas fa-user-circle navAvatar navMenuItem"></i>
+              <div
+                className="navMenuItem loginBtn"
+                onClick={() => handleLogout(disconnectWallet)}
+              >
+                Logout
+              </div>
             </>
           )}
         </div>
