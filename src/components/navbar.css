@@ -32,6 +32,7 @@
   align-items: center;
   font-weight: 800;
   cursor: pointer;
+  border: none !important;
 }
 
 .navMenu {
@@ -50,6 +51,7 @@
 
 .active {
   color: lime;
+  border-bottom: 3px solid lime;
 }
 
 .navMenuItem:hover {
