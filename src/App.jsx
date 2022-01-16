@@ -9,12 +9,13 @@ import RoadMap from "./pages/RoadMap";
 import Profile from "./pages/Profile";
 
 import React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { auth } from "./utils/firebase/firebase.config";
 import { onAuthStateChanged } from "firebase/auth";
 
 //Import thirdweb dependencies
 import { useWeb3 } from "@3rdweb/hooks";
+
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -27,8 +28,10 @@ function App() {
       setUser(currentUser);
     });
     console.log(user);
+
     return unsub;
   }, [user]);
+
   useEffect(() => {
     if (address) {
       setWalletAddress(address);
