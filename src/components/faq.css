@@ -4,12 +4,23 @@
   justify-content: center;
 }
 
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+}
+
 .faqContainer {
+  margin-top: 10%;
   height: 500px;
-  width: 90%;
+  max-width: 90%;
+  text-align: center;
   color: white;
   padding: 30px;
-  margin-top: 10%;
+  margin: auto;
   overflow-y: scroll;
 }
 
@@ -20,12 +31,13 @@
 .faqQuestion {
   font-weight: 800;
   font-size: 1.6rem;
-  margin-top: 10px;
-  width: 100%;
+  text-align: center;
+  max-width: 80ch;
 }
 
 .faqAnswer {
   margin: 10px;
   line-height: 25px;
-  width: 60ch;
+  max-width: 80ch;
+  text-align: center;
 }
