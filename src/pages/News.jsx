@@ -5,13 +5,15 @@ import "../components/newscard.css";
 
 const News = () => {
   const [newsData, setNewsData] = useState([]);
+  //State for search input
+  const [search, setSearch] = useState("Ehtereum");
 
   useEffect(() => {
     const options = {
       method: "GET",
       url: "https://bing-news-search1.p.rapidapi.com/news/search",
       params: {
-        q: "Ethereum",
+        q: { search },
         freshness: "Day",
         textFormat: "Raw",
         safeSearch: "Off",

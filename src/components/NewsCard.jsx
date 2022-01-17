@@ -13,7 +13,7 @@ const NewsCard = ({ link, image, title, content, date, provider }) => {
           </div>
 
           <div className="cardFooter">
-            <span style={{ color: "white", fontSize: "0.8rem" }}>
+            <span style={{ color: "white", fontSize: "1.2rem" }}>
               - {provider}
             </span>
             <br />
