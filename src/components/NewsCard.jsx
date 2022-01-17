@@ -12,7 +12,6 @@ const NewsCard = ({ link, image, title, content, date, provider }) => {
             <h1 className="cardTitle">{title}</h1>
           </div>
 
-          <p className="cardContent">{content}</p>
           <div className="cardFooter">
             <span style={{ color: "white", fontSize: "0.8rem" }}>
               - {provider}
