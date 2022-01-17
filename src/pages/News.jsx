@@ -41,7 +41,17 @@ const News = () => {
       <div className="newsContainer">
         {newsData.map((news) => {
           console.log(news);
-          return <NewsCard key={news.datePublished} />;
+          return (
+            <NewsCard
+              key={Math.random()}
+              link={news.url}
+              image={news?.image?.thumbnail?.contentUrl}
+              title={news.name}
+              content={news.description}
+              date={news.datePublished}
+              provider={news.provider[0].name}
+            />
+          );
         })}
       </div>
     </>

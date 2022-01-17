@@ -1,27 +1,30 @@
+import moment from "moment";
 import React from "react";
 import "./newscard.css";
 
-const NewsCard = ({
-  date,
-  author,
-  image,
-  title,
-  orginization,
-  orginizationImage,
-  content,
-}) => {
+const NewsCard = ({ link, image, title, content, date, provider }) => {
   return (
-    <div className="darkGlassCard newsCard">
-      <h1 style={{ color: "white" }}>Title</h1>
-      <p style={{ color: "white" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        incidunt repellendus recusandae? Ipsa fugit, sapiente debitis quos quasi
-        repellendus. Cum laudantium, ipsum commodi perspiciatis vel ullam qui
-        repellat, perferendis amet et voluptatibus vero laboriosam adipisci
-        aliquid at, minima assumenda quos earum? Minima rem maiores saepe
-        cupiditate unde consectetur vero aspernatur.
-      </p>
-    </div>
+    <>
+      <a href={link}>
+        <div className="darkGlassCard newsCard">
+          <div className="cardImage">
+            {image && <img src={image} alt={title} />}
+            <h1 className="cardTitle">{title}</h1>
+          </div>
+
+          <p className="cardContent">{content}</p>
+          <div className="cardFooter">
+            <span style={{ color: "white", fontSize: "0.8rem" }}>
+              - {provider}
+            </span>
+            <br />
+            <span className="cardPublishDate">
+              {moment(date).format("MM-DD-YYYY")}
+            </span>
+          </div>
+        </div>
+      </a>
+    </>
   );
 };
 
