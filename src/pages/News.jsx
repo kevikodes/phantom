@@ -11,7 +11,7 @@ const News = () => {
       method: "GET",
       url: "https://bing-news-search1.p.rapidapi.com/news/search",
       params: {
-        q: "NFT",
+        q: "Ethereum",
         freshness: "Day",
         textFormat: "Raw",
         safeSearch: "Off",
