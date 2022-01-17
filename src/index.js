@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 //Import thirdweb provider
 import { ThirdwebProvider } from "@3rdweb/react";
+//Import react router
+import { BrowserRouter } from "react-router-dom";
 
 const supportedChainIds = [4];
 const connectors = {
@@ -17,7 +19,9 @@ ReactDOM.render(
       connectors={connectors}
       supportedChainIds={supportedChainIds}
     >
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThirdwebProvider>
   </React.StrictMode>,
   document.getElementById("root")
