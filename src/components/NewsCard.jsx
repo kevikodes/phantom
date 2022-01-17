@@ -9,8 +9,8 @@ const NewsCard = ({ link, image, title, content, date, provider }) => {
         <div className="darkGlassCard newsCard">
           <div className="cardImage">
             {image && <img src={image} alt={title} />}
-            <h1 className="cardTitle">{title}</h1>
           </div>
+          <h1 className="cardTitle">{title}</h1>
 
           <div className="cardFooter">
             <span style={{ color: "white", fontSize: "0.8rem" }}>

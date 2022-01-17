@@ -12,7 +12,7 @@
 
 .newsCard {
   margin-bottom: 30px;
-  max-width: 100%;
+  min-width: 200px;
   margin: 5px;
   padding: 30px;
   min-height: 200px;
