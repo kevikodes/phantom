@@ -3,9 +3,9 @@ import React from 'react'
 function Icon() {
     return (
         <div>
-            <h2></h2>
+            <img src="./public/black-phantom.svg" alt="" />
         </div>
     )
 }
 
-export default Info
+export default Icon
