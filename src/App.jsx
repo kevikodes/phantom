@@ -18,6 +18,9 @@ import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 import { Routes, Route } from "react-router-dom";
 
+//Import Counter
+import Counter from "./components/Counter";
+
 function App() {
   const { address, provider } = useWeb3();
   const [walletAddress, setWalletAddress] = useState("");
@@ -43,6 +46,7 @@ function App() {
   return (
     <div className="app">
       <Navbar user={user} walletAddress={walletAddress} />
+      
       <Routes>
         <Route
           path="/"
