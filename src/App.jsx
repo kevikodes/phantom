@@ -1,9 +1,5 @@
 import "./App.css";
 
-<<<<<<< HEAD
-function App() {
-  return <div></div>;
-=======
 import Navbar from "./components/Navbar";
 //Pages
 import Home from "./pages/Home";
@@ -63,7 +59,6 @@ function App() {
       </Routes>
     </div>
   );
->>>>>>> 12750d3f0aab0b6bb78e6b59ca67d80252f08608
 }
 
 export default App;
