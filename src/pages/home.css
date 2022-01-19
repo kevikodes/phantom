@@ -1,0 +1,15 @@
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeTitle {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
