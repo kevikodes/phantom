@@ -46,6 +46,7 @@ function App() {
   return (
     <div className="app">
       <Navbar user={user} walletAddress={walletAddress} />
+
       
       <Routes>
         <Route
