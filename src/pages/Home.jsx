@@ -9,6 +9,7 @@ const Home = () => {
       <div className="homeTitle">Mint your very own Phantom!</div>
       {true && <Counter />}
       <div className="mintCard">{false && <Mint />}</div>
+      <div><img src="" alt="" /></div>
     </div>
   );
 };

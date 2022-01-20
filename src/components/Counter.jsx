@@ -4,7 +4,7 @@ import "./counter.css";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
-const daySeconds = 86400;
+const daySeconds = 600;
 
 const timerProps = {
   isPlaying: true,
@@ -28,7 +28,7 @@ const getTimeDays = (time) => (time / daySeconds) | 0;
 
 const Counter = () => {
   const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = stratTime + 243248; // use UNIX timestamp in seconds
+  const endTime = stratTime + 50; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - stratTime;
   const days = Math.ceil(remainingTime / daySeconds);
