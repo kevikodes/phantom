@@ -4,7 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 //Import thirdweb provider
-import { ThirdwebProvider } from "@3rdweb/react";
+import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
+//Import react router
+import { BrowserRouter } from "react-router-dom";
 
 const supportedChainIds = [4];
 const connectors = {
@@ -13,12 +15,14 @@ const connectors = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThirdwebProvider
+    <ThirdwebWeb3Provider
       connectors={connectors}
       supportedChainIds={supportedChainIds}
     >
-      <App />
-    </ThirdwebProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThirdwebWeb3Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );

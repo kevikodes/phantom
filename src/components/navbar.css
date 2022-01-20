@@ -1,0 +1,87 @@
+.navbar {
+  width: 100%;
+  min-height: 80px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navMenu {
+    margin-top: -10px;
+  }
+}
+
+.logo {
+  -webkit-text-stroke: 0.9px black;
+  background: #00ff3c;
+  background: -webkit-linear-gradient(to right, #00ff3c 11%, #f5f5f5 78%);
+  background: -moz-linear-gradient(to right, #00ff3c 11%, #f5f5f5 78%);
+  background: linear-gradient(to right, #00ff3c 11%, #f5f5f5 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  cursor: pointer;
+  border: none !important;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navMenuItem {
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.active {
+  color: lime;
+  border-bottom: 3px solid lime;
+}
+
+.navMenuItem:hover {
+  opacity: 0.8;
+  color: lime;
+}
+
+.navAvatar {
+  color: white;
+  font-size: 1.8rem;
+  margin: 20px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  -webkit-text-stroke: 1px black;
+}
+
+.loginBtn {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.loginBtn:hover {
+  border: 1px solid lime;
+}
+
+.navAvatar:hover {
+  color: lime;
+  -webkit-text-stroke: 0.9px white;
+}
