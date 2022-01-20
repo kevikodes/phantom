@@ -6,10 +6,9 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home">
-      <div className="homeTitle">Mint your very own Phantom!</div>
+      <div className="homeTitle">Mint your very own Phantom NFT!</div>
       {true && <Counter />}
       <div className="mintCard">{false && <Mint />}</div>
-      <div><img src="" alt="" /></div>
     </div>
   );
 };
