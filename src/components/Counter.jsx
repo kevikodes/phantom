@@ -37,7 +37,7 @@ const Counter = () => {
     <div className="counter">
       <CountdownCircleTimer
         {...timerProps}
-        colors="#33cf12"
+        colors="#00ff00"
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
@@ -49,7 +49,7 @@ const Counter = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#33cf12"
+        colors="#00ff00"
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         onComplete={(totalElapsedTime) => ({
@@ -64,7 +64,7 @@ const Counter = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#33cf12"
+        colors="#00ff00"
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         onComplete={(totalElapsedTime) => ({
@@ -79,7 +79,7 @@ const Counter = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#33cf12"
+        colors="#00ff00"
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => ({
