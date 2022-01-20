@@ -10,9 +10,20 @@
   margin: auto;
 }
 
+.newsPageHeader1 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: gray;
+  font-size: 22px;
+}
+
+.button1 {
+  color: black;
+}
 .newsCard {
   margin-bottom: 30px;
-  min-width: 200px;
+  max-width: 100%;
   margin: 5px;
   padding: 30px;
   min-height: 200px;
@@ -57,9 +68,24 @@
 
 .cardPublishDate {
   color: white;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .cardFooter {
   margin: 10px;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
 }

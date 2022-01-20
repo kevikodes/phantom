@@ -37,12 +37,12 @@ const Counter = () => {
     <div className="counter">
       <CountdownCircleTimer
         {...timerProps}
-        colors='#33cf12'
+        colors="#33cf12"
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color }}>
+          <span style={{ color, fontSize: "20px", textAlign: "center" }}>
             {renderTime("days", getTimeDays(daysDuration - elapsedTime))}
           </span>
         )}
@@ -57,7 +57,7 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color }}>
+          <span style={{ color, fontSize: "20px", textAlign: "center" }}>
             {renderTime("hours", getTimeHours(daySeconds - elapsedTime))}
           </span>
         )}
@@ -72,7 +72,7 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color }}>
+          <span style={{ color, fontSize: "20px", textAlign: "center" }}>
             {renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))}
           </span>
         )}
@@ -87,7 +87,7 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color }}>
+          <span style={{ color, fontSize: "20px", textAlign: "center" }}>
             {renderTime("seconds", getTimeSeconds(elapsedTime))}
           </span>
         )}
