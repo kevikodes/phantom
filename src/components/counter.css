@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap'); */
 
 .counter > span {
   color: black;
@@ -18,7 +18,7 @@
   position: relative; left:25px; top: 225px ;
   margin: -700px;
   border-bottom: 1px solid whitesmoke;
-  font-family: 'Creepster', cursive;
+  /* font-family: 'Creepster', cursive; */
 }
 
 .counter > span:nth-child(1) {

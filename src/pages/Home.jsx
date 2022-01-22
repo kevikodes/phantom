@@ -11,6 +11,16 @@ const Home = () => {
       <div><img src="images/ptm.png" alt="" /></div>
       {true && <Counter />}
       <div className="mintCard">{false && <Mint />}</div>
+
+      <div className='newEmail'>
+        <div className='newInput'>
+            <form>
+                <input type='text' placeholder='ex: myname@example.com'></input>
+                <button value='Submit'>Submit</button>
+            </form>
+        </div>
+      </div>
+
     </div>
   );
 };
