@@ -2,7 +2,6 @@ import React from "react";
 import Counter from "../components/Counter";
 import Mint from "../components/Mint";
 import "./home.css";
-import Email from "../components/Email";
 
 const Home = () => {
   return (
