@@ -55,36 +55,6 @@ const News = () => {
     return fetchInitialNews();
   }, []);
 
-  // useEffect(() => {
-  //   const options = {
-  //     method: "GET",
-  //     url: "https://bing-news-search1.p.rapidapi.com/news/search",
-  //     params: {
-  //       q: { query },
-  //       freshness: "Day",
-  //       textFormat: "Raw",
-  //       safeSearch: "Off",
-  //     },
-  //     headers: {
-  //       "x-bingapis-sdk": "true",
-  //       "x-rapidapi-host": "bing-news-search1.p.rapidapi.com",
-  //       "x-rapidapi-key": "c65f95fd9amsha8853a34b3f1029p16cdafjsn465fb4ed7007",
-  //     },
-  //   };
-
-  //   const searchNews = async () => {
-  //     try {
-  //       const res = await axios.request(options);
-  //       if (res) {
-  //         setNewsData(res.data.value);
-  //       }
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   return searchNews();
-  // }, []);
-
   const search = (e) => {
     e.preventDefault();
     searchNews(query).then(setNewsData);

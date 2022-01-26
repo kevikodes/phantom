@@ -23,11 +23,11 @@
 }
 .newsCard {
   margin-bottom: 30px;
-  max-width: 100%;
+  min-height: 200px;
+  max-width: 600px;
   margin: 5px;
   padding: 30px;
-  min-height: 200px;
-  max-height: 250px;
+  border-radius: 10px;
   overflow-y: scroll;
   cursor: pointer;
 }
@@ -38,7 +38,7 @@
 
 .newsPageHeader {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
   color: white;
 }
@@ -56,9 +56,11 @@
 .cardTitle {
   color: white;
   font-size: 1.2rem;
+  font-weight: 400;
   display: flex;
   align-items: center;
   padding: 10px;
+  margin: 10px;
 }
 
 .cardContent {
@@ -88,4 +90,10 @@
   font-size: 16px;
   /* margin: 4px 2px; */
   cursor: pointer;
+}
+
+.newCardWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
