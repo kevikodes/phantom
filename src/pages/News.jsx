@@ -53,7 +53,7 @@ const News = () => {
       }
     };
     return fetchInitialNews();
-  }, []);
+  }, [newsData]);
 
   const search = (e) => {
     e.preventDefault();

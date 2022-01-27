@@ -28,6 +28,10 @@ function App() {
 
   const sdk = new ThirdwebSDK(provider);
 
+  const openseaURL = `https://testnets.opensea.io/${
+    address || "/assets/0x16baf0de678e52367adc69fd067e5edd1d33e3bf"
+  }`;
+
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -46,11 +50,18 @@ function App() {
   return (
     <div className="app">
       <Navbar user={user} walletAddress={walletAddress} />
-      
+
       <Routes>
         <Route
           path="/"
-          element={<Home provider={provider} address={address} sdk={sdk} />}
+          element={
+            <Home
+              provider={provider}
+              address={address}
+              sdk={sdk}
+              openseaURL={openseaURL}
+            />
+          }
         />
         <Route path="/news" element={<News />} />
         <Route path="/roadmap" element={<RoadMap />} />
