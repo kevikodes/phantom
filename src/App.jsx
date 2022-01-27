@@ -66,7 +66,14 @@ function App() {
           }
         />
         <Route path="/news" element={<News />} />
-        <Route path="/roadmap" element={<RoadMap />} />
+        <Route
+          path="/roadmap"
+          element={
+            <div>
+              <RoadMap />
+            </div>
+          }
+        />
         <Route path="/profile" element={<Profile />} />
         <Route path="/faqs" element={<Faqs />} />
       </Routes>

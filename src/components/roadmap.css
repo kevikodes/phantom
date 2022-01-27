@@ -1,25 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  /* margin: 10px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container {
   height: 75vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(3, 3, 116);
+  background-color: hsl(128, 100%, 10%);
   margin-top: 6rem;
+  padding: 20px;
 }
 
 .roadmap {
@@ -42,7 +30,7 @@ body {
   /* right: .1rem;
     left: 1rem; */
   transform: translateY(-50%);
-  background: lightskyblue;
+  background-color: mintcream;
 }
 
 .box {
