@@ -31,13 +31,15 @@ const Mint = () => {
 
   return (
     <div className="mintFrame">
-      <iframe
-        src="https://cloudflare-ipfs.com/ipfs/bafybeib6q6q2a4ibiwfq657suynze7r4a3kyh6cuhvkga2sc4gjez2rz2y?contract=0x82BCd1781329D0A2D721B0535DA5BDF62669c0bc&chainId=4&tokenId=0"
-        width="600px"
-        height="600px"
-        style={{ maxWidth: "70%" }}
-        frameborder="0"
-      />
+      {address && (
+        <iframe
+          src="https://cloudflare-ipfs.com/ipfs/bafybeib6q6q2a4ibiwfq657suynze7r4a3kyh6cuhvkga2sc4gjez2rz2y?contract=0x82BCd1781329D0A2D721B0535DA5BDF62669c0bc&chainId=4&tokenId=0"
+          width="500px"
+          height="500px"
+          style={{ maxWidth: "70%", backgroundColor: "green" }}
+          frameborder="0"
+        />
+      )}
     </div>
   );
 };

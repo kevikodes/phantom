@@ -1,6 +1,6 @@
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import "./counter.css";
+import "./Counter.css";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
@@ -28,7 +28,7 @@ const getTimeDays = (time) => (time / daySeconds) | 0;
 
 const Counter = () => {
   const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = stratTime + 50; // use UNIX timestamp in seconds
+  const endTime = stratTime + 243248; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - stratTime;
   const days = Math.ceil(remainingTime / daySeconds);
@@ -42,7 +42,7 @@ const Counter = () => {
         initialRemainingTime={remainingTime}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color, fontSize: "20px", textAlign: "center" }}>
+          <span style={{ color, textAlign: "center" }}>
             {renderTime("days", getTimeDays(daysDuration - elapsedTime))}
           </span>
         )}
@@ -57,7 +57,7 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color, fontSize: "20px", textAlign: "center" }}>
+          <span style={{ color, textAlign: "center" }}>
             {renderTime("hours", getTimeHours(daySeconds - elapsedTime))}
           </span>
         )}
@@ -72,7 +72,7 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color, fontSize: "20px", textAlign: "center" }}>
+          <span style={{ color, textAlign: "center" }}>
             {renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))}
           </span>
         )}
@@ -87,7 +87,7 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color, fontSize: "20px", textAlign: "center" }}>
+          <span style={{ color, textAlign: "center" }}>
             {renderTime("seconds", getTimeSeconds(elapsedTime))}
           </span>
         )}

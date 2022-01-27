@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 
 import Navbar from "./components/Navbar";
 //Pages
@@ -8,7 +9,6 @@ import News from "./pages/News";
 import RoadMap from "./pages/RoadMap";
 import Profile from "./pages/Profile";
 
-import React from "react";
 import { useEffect, useState } from "react";
 import { auth } from "./utils/firebase/firebase.config";
 import { onAuthStateChanged } from "firebase/auth";
@@ -19,7 +19,8 @@ import { ThirdwebSDK } from "@3rdweb/sdk";
 import { Routes, Route } from "react-router-dom";
 
 //Import Counter
-import Counter from "./components/Counter";
+
+import Footer from "./components/Footer";
 
 function App() {
   const { address, provider } = useWeb3();
@@ -27,6 +28,10 @@ function App() {
   const [user, setUser] = useState({});
 
   const sdk = new ThirdwebSDK(provider);
+
+  const openseaURL = `https://testnets.opensea.io/${
+    address || "/assets/0x16baf0de678e52367adc69fd067e5edd1d33e3bf"
+  }`;
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (currentUser) => {
@@ -46,17 +51,27 @@ function App() {
   return (
     <div className="app">
       <Navbar user={user} walletAddress={walletAddress} />
-      
+
       <Routes>
         <Route
           path="/"
-          element={<Home provider={provider} address={address} sdk={sdk} />}
+          element={
+            <Home
+              provider={provider}
+              address={address}
+              sdk={sdk}
+              openseaURL={openseaURL}
+              user={user}
+            />
+          }
         />
         <Route path="/news" element={<News />} />
         <Route path="/roadmap" element={<RoadMap />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/faqs" element={<Faqs />} />
       </Routes>
+      <div style={{ height: "300px" }}></div>
+      <Footer />
     </div>
   );
 }

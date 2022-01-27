@@ -38,7 +38,7 @@ const Navbar = ({ user, walletAddress }) => {
                 className="navMenuItem loginBtn"
                 onClick={() => handleAuth(connectWallet)}
               >
-                Login
+                MetaMask Login
               </div>
             </>
           )}
