@@ -20,6 +20,7 @@ import { Routes, Route } from "react-router-dom";
 
 //Import Counter
 import Counter from "./components/Counter";
+import Footer from "./components/Footer";
 
 function App() {
   const { address, provider } = useWeb3();
@@ -68,6 +69,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/faqs" element={<Faqs />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -30,6 +30,7 @@ const Home = () => {
           </>
         )}
       </div>
+      <div style={{ height: "450px" }}></div>
     </div>
   );
 };
