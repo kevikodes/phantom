@@ -7,18 +7,18 @@ const Home = () => {
   return (
     <div className="home">
        <div className="homeTitle">Mint your very own Phantom NFT!</div>
-      <div><img src="images/ptm.png" alt="" /></div>
-      {true && <Counter />}
+      <div className="homeImage"><img src="images/ptm.png" alt="" /></div>
+      {true && <div className="clock">
+        <Counter />
+        </div>}
       <div className="mintCard">{false && <Mint />}</div>
 
-      <div className='newEmail'>
-        <div className='newInput'>
-            <form>
+
+            <form className="email"> 
                 <input type='text' placeholder='ex: myname@example.com'></input>
-                <button value='Submit'>Submit</button>
+                <button classname='submitButton'value='Submit'>Submit</button>
             </form>
-        </div>
-      </div>
+
 
     </div>
   );

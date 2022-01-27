@@ -92,7 +92,8 @@ const Counter = () => {
           </span>
         )}
       </CountdownCircleTimer>
-      <p id='belowLine'>Until collection drops!</p>
+      <p >Until collection drops!</p>
+      <hr id="belowLine" />
     </div>
 
   );
