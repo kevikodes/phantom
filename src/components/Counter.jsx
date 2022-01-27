@@ -38,19 +38,19 @@ const Counter = () => {
     <div className="counter">
       <CountdownCircleTimer
         {...timerProps}
-        colors="#00ff00"
+        colors="#33cf12"
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color, textAlign: "center" }}>
+          <span style={{ color }}>
             {renderTime("days", getTimeDays(daysDuration - elapsedTime))}
           </span>
         )}
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#00ff00"
+        colors="#33cf12"
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         onComplete={(totalElapsedTime) => ({
@@ -58,14 +58,14 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color, textAlign: "center" }}>
+          <span style={{ color }}>
             {renderTime("hours", getTimeHours(daySeconds - elapsedTime))}
           </span>
         )}
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#00ff00"
+        colors="#33cf12"
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         onComplete={(totalElapsedTime) => ({
@@ -73,14 +73,14 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color, textAlign: "center" }}>
+          <span style={{ color }}>
             {renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))}
           </span>
         )}
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#00ff00"
+        colors="#33cf12"
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => ({
@@ -88,7 +88,7 @@ const Counter = () => {
         })}
       >
         {({ elapsedTime, color }) => (
-          <span style={{ color, textAlign: "center" }}>
+          <span style={{ color }}>
             {renderTime("seconds", getTimeSeconds(elapsedTime))}
           </span>
         )}

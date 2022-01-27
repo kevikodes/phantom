@@ -12,31 +12,23 @@ const Home = ({ openseaURL, user }) => {
   return (
     <div className="home">
       <div className="homeTitle">Mint your very own Phantom NFT!</div>
-
-      {true && <Counter />}
-      <div className="mintCard">
-        {/* If the the mint release date timer hits 0, the user will be able to
-        mint their own NFT */}
-        {address && user && (
-          <>
-            {/* If the user is not logged in and has not connected their wallet,
-            don't show the opensea button */}
-            {address && user && (
-              <div style={{ display: "flex", justifyContent: "center" }}>
-                <button
-                  className="openSeaUrl"
-                  onClick={() => (window.location = `${openseaURL}`)}
-                >
-                  Check out your NFT's
-                  <br />
-                  <span>on OpenSea!!!</span>
-                </button>
-              </div>
-            )}
-            <Mint />
-          </>
-        )}
+      <div className="homeImage">
+        <img src="images/ptm.png" alt="" />
       </div>
+      {true && (
+        <div className="clock">
+          <Counter />
+        </div>
+      )}
+      <div className="mintCard">{false && <Mint />}</div>
+      <p className="minting">Until minting starts!</p>
+      <p className="join">Join our waitlist today to be notified!</p>{" "}
+      <form className="email">
+        <input type="text" placeholder="ex: myname@example.com"></input>
+        <button className="submitButton" value="Submit">
+          Submit
+        </button>
+      </form>
     </div>
   );
 };
