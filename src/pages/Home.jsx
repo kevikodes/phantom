@@ -22,7 +22,7 @@ const Home = ({ openseaURL, user }) => {
       )}
       <div className="mintCard">{false && <Mint />}</div>
       <p className="minting">Until minting starts!</p>
-      <p className="join">Join our waitlist today to be notified!</p>{" "}
+      <p className="join">Join our waitlist today to be notified!</p>
       <form className="email">
         <input type="text" placeholder="ex: myname@example.com"></input>
         <button className="submitButton" value="Submit">
