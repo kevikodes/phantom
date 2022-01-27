@@ -62,6 +62,7 @@ const Faqs = () => {
   ]);
   return (
     <div className="faqWrapper">
+      <h1 className="faqTitle">Frequently Asked Questions</h1>
       <div className="darkGlassCard faqContainer">
         {faqs.map((faq) => {
           return (
