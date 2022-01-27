@@ -92,8 +92,6 @@ const Counter = () => {
           </span>
         )}
       </CountdownCircleTimer>
-      <p >Until collection drops!</p>
-      <hr id="belowLine" />
     </div>
 
   );

@@ -13,10 +13,11 @@ const Home = () => {
         </div>}
       <div className="mintCard">{false && <Mint />}</div>
 
+      <p className="minting">Until minting starts!</p>
 
-            <form className="email"> 
+           <p className="join">Join our waitlist today to be notified!</p> <form className="email"> 
                 <input type='text' placeholder='ex: myname@example.com'></input>
-                <button classname='submitButton'value='Submit'>Submit</button>
+                <button className="submitButton" value='Submit'>Submit</button>
             </form>
 
 

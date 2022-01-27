@@ -15,7 +15,7 @@
 }
 
 .homeTitle {
-  color: white;
+  color: whitesmoke;
   font-size: 2.3rem;
   width: 100%;
   justify-content: center;
@@ -29,7 +29,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-
 }
 
 .homeImage img {
@@ -38,7 +37,11 @@
   width: 1000px;
 }
 
-
+.minting {
+  font-size: 40px;
+  position: absolute; left: 370px; bottom: -550px ;
+  color: whitesmoke;
+}
 
 /* .homeTitle {
   color: white;
@@ -52,21 +55,30 @@
   height: 1300px;
   position: relative; top: -115px;
 } */
-
+.join {
+  font-size: 25px;
+  color: whitesmoke;
+  position: relative; right: 200px; bottom: -110px;
+  text-shadow: 0 0 20px rgb(15, 182, 68);
+}
 
 .email {
   display: flex;
   margin: 1200px;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
 }
 
 .email input{
-  width: 600px;
+  width: 300px;
+  height: 30px;
+  padding: 15px;
+  position: absolute; left: 550px; bottom: -900px ;
 }
 
-.submitButton{
-  padding: 5px;
-  
+.submitButton {
+  width: 65px;
+  padding: 7px;
+  position: absolute; left: 850px; bottom: -900px ;
 }
 
 .newInput input {

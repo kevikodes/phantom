@@ -10,15 +10,14 @@
   /* border: .5px solid #097919; */
   width: 55%;
   color: black;
-  padding: 30px;
+  padding: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-shadow: 0 0 20px rgb(10, 230, 76),  0 0 20px rgba(10, 175, 230, 0);
-  position: relative; left:25px; top: 225px ;
+  position: relative; left:25px; top: -290px ;
   /* margin: -700px; */
-  border-bottom: 1px solid whitesmoke;
-  /* font-family: 'Creepster', cursive; */
+
 }
 
 .counter > span:nth-child(1) {
@@ -26,13 +25,11 @@
   border-radius: 50px;
 }
 
-#belowLine {
+/* #belowLine {
   display: flex;
   flex-direction: row;
   font-size: 28px;
   color: white;
-  position: absolute; left: 100px; bottom: -55px ;
+  position: absolute; left: 100px; bottom: 0px ;
   margin-bottom: 10px;
-
-
-}
+} */
