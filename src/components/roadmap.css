@@ -1,13 +1,32 @@
 .container {
-  height: 75vh;
-  width: 100%;
+  min-width: 80%;
+  max-width: 80%;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: hsl(128, 100%, 10%);
-  margin-top: 6rem;
-  padding: 20px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.5);
+  @media (min-width: 768px) {
+    width: 60vw;
+  }
+}
+
+.roadmapWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+
+  @media (min-width: 768px) {
+    width: 80vw;
+  }
 }
 
 .roadmap {
@@ -49,7 +68,7 @@
   position: absolute;
   top: 0;
   left: 0px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 255, 0, 0.212);
   z-index: 2;
   pointer-events: none;
   border-radius: 2px;
@@ -69,8 +88,8 @@
 }
 
 .box .date:hover {
-  background-color: rgba(83, 210, 241, 0.911);
-  color: rgb(189, 181, 181);
+  background-color: rgba(51, 255, 0, 0.911);
+  color: rgb(180, 169, 169);
   transition: 0.5s;
 }
 
@@ -92,11 +111,13 @@
 }
 
 .box .box-content:hover {
-  background-color: black;
+  background-color: rgb(1, 20, 0);
   transition: 0.5s;
   border-radius: 5px;
   margin: 10px;
   /* padding: 5px; */
+  opacity: 1;
+  z-index: 999;
 }
 
 .box-content p {
@@ -106,7 +127,7 @@
 }
 
 .box-content p:hover {
-  color: mediumblue;
+  color: rgb(0, 172, 0);
   opacity: 0.8;
 }
 
@@ -127,11 +148,11 @@
 }
 
 .box-bottom .box-content::before {
-  border-bottom-color: #00b0bd;
+  border-bottom-color: #1eff00;
   top: -20px;
 }
 
 .box-top .box-content::before {
-  border-top-color: #69e7f0;
+  border-top-color: #1eff00;
   bottom: -20px;
 }
