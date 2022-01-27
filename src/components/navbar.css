@@ -27,7 +27,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   font-weight: 800;
@@ -46,7 +46,7 @@
   color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .active {
