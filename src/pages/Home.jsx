@@ -3,8 +3,10 @@ import { Navigate } from "react-router-dom";
 import Counter from "../components/Counter";
 import Mint from "../components/Mint";
 import "./home.css";
+import { useWeb3 } from "@3rdweb/hooks";
 
-const Home = ({ address, openseaURL }) => {
+const Home = () => {
+  const { address } = useWeb3();
   return (
     <div className="home">
       <div className="homeTitle">Mint your very own Phantom NFT!</div>

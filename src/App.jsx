@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 
 import Navbar from "./components/Navbar";
 //Pages
@@ -8,7 +9,6 @@ import News from "./pages/News";
 import RoadMap from "./pages/RoadMap";
 import Profile from "./pages/Profile";
 
-import React from "react";
 import { useEffect, useState } from "react";
 import { auth } from "./utils/firebase/firebase.config";
 import { onAuthStateChanged } from "firebase/auth";
