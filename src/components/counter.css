@@ -1,3 +1,4 @@
+
 .counter > span {
   color: black;
   font-size: 3rem;
@@ -12,7 +13,7 @@
   padding: 30px;
   display: flex;
   flex-direction: row;
-  text-shadow: 0 0 20px rgb(10, 230, 76), 0 0 20px rgba(10, 175, 230, 0);
+  text-shadow: 0 0 20px rgb(10, 230, 76),  0 0 20px rgba(10, 175, 230, 0);
 }
 
 .counter > span:nth-child(1) {
