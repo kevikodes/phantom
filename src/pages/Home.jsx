@@ -6,7 +6,7 @@ import "./home.css";
 import { useWeb3 } from "@3rdweb/hooks";
 
 const Home = () => {
-  const { address } = useWeb3();
+  const { address, openseaURL } = useWeb3();
   return (
     <div className="home">
       <div className="homeTitle">Mint your very own Phantom NFT!</div>
