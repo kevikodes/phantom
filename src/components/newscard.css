@@ -1,13 +1,12 @@
 .newsContainer {
   max-width: 80%;
   height: 100%;
-  place-items: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
   padding: 40px;
   margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .newsPageHeader1 {

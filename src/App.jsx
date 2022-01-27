@@ -19,7 +19,7 @@ import { ThirdwebSDK } from "@3rdweb/sdk";
 import { Routes, Route } from "react-router-dom";
 
 //Import Counter
-import Counter from "./components/Counter";
+
 import Footer from "./components/Footer";
 
 function App() {
@@ -70,6 +70,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/faqs" element={<Faqs />} />
       </Routes>
+      <div style={{ height: "300px" }}></div>
       <Footer />
     </div>
   );
