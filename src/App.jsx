@@ -61,6 +61,7 @@ function App() {
               address={address}
               sdk={sdk}
               openseaURL={openseaURL}
+              user={user}
             />
           }
         />

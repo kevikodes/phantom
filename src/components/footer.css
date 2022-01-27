@@ -3,6 +3,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  height: 30vh;
+  left: 0;
+  bottom: 0;
+  margin-top: 100px;
+  background-color: rgb(2, 22, 0);
+  border-top: 3px solid rgb(9, 255, 0);
 }
 
 .navMenuFooter > a {

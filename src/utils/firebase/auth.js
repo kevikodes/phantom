@@ -29,3 +29,12 @@ export const handleAuth = async (connectWallet) => {
     console.log(error);
   }
 };
+
+//Connect metamask wallet
+export const handleWalletConnect = async (connectWallet) => {
+  try {
+    await connectWallet("injected");
+  } catch (error) {
+    console.log(error);
+  }
+};
