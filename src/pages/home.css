@@ -26,20 +26,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 600px;
+  overflow: hidden;
 }
 
 .homeImage img {
   z-index: 999;
-  height: 1200px;
-  width: 1000px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .minting {
   font-size: 40px;
-  position: absolute;
-  left: 370px;
-  bottom: -550px;
+
+  /* bottom: -550px; */
   color: whitesmoke;
 }
 
@@ -58,9 +59,7 @@
 .join {
   font-size: 25px;
   color: whitesmoke;
-  position: relative;
-  right: 200px;
-  bottom: -110px;
+
   text-shadow: 0 0 20px rgb(15, 182, 68);
 }
 
@@ -140,8 +139,6 @@
   padding: 20px;
 }
 .email {
-  display: flex;
-  margin: 1200px;
   border: 1px solid whitesmoke;
 }
 
@@ -149,17 +146,12 @@
   width: 300px;
   height: 30px;
   padding: 15px;
-  position: absolute;
-  left: 550px;
-  bottom: -900px;
 }
 
 .submitButton {
   width: 65px;
   padding: 7px;
-  position: absolute;
-  left: 850px;
-  bottom: -900px;
+  border: 1px solid whitesmoke;
 }
 
 .newInput input {
