@@ -11,23 +11,26 @@ const Home = ({ openseaURL, user }) => {
   console.log(openseaURL);
   return (
     <div className="home">
-      <div className="homeTitle">Mint your very own Phantom NFT!</div>
-      {!user && !address && (
-        <div className="homeImage">
-          <img src="images/ptm.png" alt="" />
-        </div>
-      )}
-      {!user && !address && (
-        <div className="clock">
-          <Counter />
-        </div>
-      )}
-      <div className="mintCard">{address && user && <Mint />}</div>
-      {!user && !address && <p className="minting">Until minting starts!</p>}
+      <div className="homeContainer">
+        <div className="homeTitle">Get your very own Phantom NFT!</div>
 
-      {!user && !address && (
+        {!user && !address && (
+          <div className="clock">
+            <Counter />
+          </div>
+        )}
+
+        {/* {!user && !address && (
+  <div className="homeImage">
+    <img src="images/ptm.png" alt="" height="50px" width="50px" />
+  </div>
+)} */}
+
+        <div className="mintCard">{address && user && <Mint />}</div>
+        {!user && !address && <p className="minting">Until NFT releases!</p>}
+
         <form className="email">
-          <p className="join">Join our waitlist today to be notified!</p>
+          <p className="join">Join our whitelist today to be notified!</p>
           <div>
             <input type="text" placeholder="ex: myname@example.com"></input>
             <button className="submitButton" value="Submit">
@@ -35,7 +38,7 @@ const Home = ({ openseaURL, user }) => {
             </button>
           </div>
         </form>
-      )}
+      </div>
     </div>
   );
 };

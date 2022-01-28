@@ -24,11 +24,14 @@
   margin-bottom: 30px;
   min-height: 200px;
   max-width: 600px;
-  margin: 5px;
+  margin: 20px;
   padding: 30px;
   border-radius: 10px;
   overflow-y: scroll;
   cursor: pointer;
+
+  -webkit-box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
+  box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
 }
 
 .newsCard::-webkit-scrollbar {

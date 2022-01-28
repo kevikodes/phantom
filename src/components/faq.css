@@ -8,31 +8,34 @@
 }
 
 .faqTitle {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 800;
   margin-bottom: 20px;
   color: white;
+  text-shadow: 4px 3px 11px #98ff82;
+  text-align: center;
 }
 
 .faq {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  padding: 30px;
+
+  margin: 30px auto;
+  padding: 0 0 30px 50px;
 }
 
 .faqContainer {
   margin-top: 10%;
   height: 650px;
   max-width: 90%;
-  text-align: center;
   color: white;
-  padding: 30px;
+  padding: 50px 30px;
   margin: auto;
   margin-bottom: 30px;
   overflow-y: scroll;
+  -webkit-box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
+  box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
+  margin-top: 30px;
 }
 
 .faqContainer::-webkit-scrollbar {
@@ -50,8 +53,8 @@
 .faqAnswer {
   margin: 10px;
   line-height: 25px;
-  max-width: 90ch;
-  text-align: center;
+  max-width: 80ch;
+  text-align: left;
   line-height: 2.3rem;
   font-size: 1.6rem;
   color: rgba(219, 221, 219, 0.938);

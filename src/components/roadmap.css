@@ -6,10 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(128, 100%, 10%);
+  border: 1px solid #26ff00;
+  -webkit-box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
+  box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.5);
 }
 
 .roadmapWrapper {

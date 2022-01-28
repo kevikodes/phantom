@@ -4,7 +4,7 @@ import "./roadmap.css";
 const RoadmapCard = () => {
   return (
     <div className="roadmapWrapper">
-      <div className="container darkGlassCard">
+      <div className="container">
         <div className="roadmap">
           <div className="road-map">
             <h1>Company Roadmap</h1>

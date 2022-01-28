@@ -77,7 +77,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/faqs" element={<Faqs />} />
       </Routes>
-      <div style={{ height: "300px" }}></div>
+      <div style={{ height: "150px" }}></div>
       <Footer />
     </div>
   );

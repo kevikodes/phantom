@@ -1,3 +1,17 @@
+.mRoadContainer {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #26ff00;
+  -webkit-box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
+  box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
 .mTimeline {
   position: relative;
   max-width: 1200px;
