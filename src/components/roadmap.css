@@ -13,6 +13,12 @@
   border-radius: 1rem;
 }
 
+.roadmapTitle {
+  color: white;
+  margin-bottom: 50px;
+  text-shadow: 4px 3px 11px #98ff82;
+}
+
 .roadmapWrapper {
   display: flex;
   flex-direction: column;

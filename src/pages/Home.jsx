@@ -11,9 +11,8 @@ const Home = ({ openseaURL, user }) => {
   console.log(openseaURL);
   return (
     <div className="home">
+      <div className="homeTitle">Get your very own Phantom NFT!</div>
       <div className="homeContainer">
-        <div className="homeTitle">Get your very own Phantom NFT!</div>
-
         {!user && !address && (
           <div className="clock">
             <Counter />

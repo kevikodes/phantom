@@ -14,13 +14,14 @@
 }
 
 .navMenuFooter > a {
-  font-weight: 800;
+  font-weight: 600;
   margin: 0 16px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .copyrightText {
-  font-size: 1.2rem;
+  font-size: 1rem;
+
   margin: 16px 16px;
   color: white;
 }

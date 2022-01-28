@@ -4,11 +4,10 @@ import "./roadmap.css";
 const RoadmapCard = () => {
   return (
     <div className="roadmapWrapper">
+      <h1 className="roadmapTitle">Company Roadmap</h1>
       <div className="container">
         <div className="roadmap">
-          <div className="road-map">
-            <h1>Company Roadmap</h1>
-          </div>
+          <div className="road-map"></div>
         </div>
         <section className="timeline-wrapper">
           <div className="middle-line"></div>

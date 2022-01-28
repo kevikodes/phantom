@@ -1,56 +1,67 @@
 import React from "react";
 import "./mobileroadmap.css";
+import "./roadmap.css";
 
 const MobileRoadmap = () => {
   return (
-    <div className="mRoadContainer">
-      <div class="mTimeline">
-        <div class="mContainer mLeft">
-          <div class="mContent">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        paddingTop: "50px",
+      }}
+    >
+      <h1 className="roadmapTitle">Company Roadmap</h1>
+      <div className="mRoadContainer">
+        <div className="mTimeline">
+          <div className="mContainer mLeft">
+            <div className="mContent">
+              <h2>2017</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
-        </div>
-        <div class="mContainer mRight">
-          <div class="mContent">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
+          <div className="mContainer mRight">
+            <div className="mContent">
+              <h2>2016</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
-        </div>
-        <div class="mContainer mLeft">
-          <div class="mContent">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
+          <div className="mContainer mLeft">
+            <div className="mContent">
+              <h2>2017</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
-        </div>
-        <div class="mContainer mRight">
-          <div class="mContent">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
+          <div className="mContainer mRight">
+            <div className="mContent">
+              <h2>2016</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
-        </div>
-        <div class="mContainer mLeft">
-          <div class="mContent">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
+          <div className="mContainer mLeft">
+            <div className="mContent">
+              <h2>2017</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
-        </div>
-        <div class="mContainer mRight">
-          <div class="mContent">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
+          <div className="mContainer mRight">
+            <div className="mContent">
+              <h2>2016</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
-        </div>
-        <div class="mContainer mLeft">
-          <div class="mContent">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
+          <div className="mContainer mLeft">
+            <div className="mContent">
+              <h2>2017</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
-        </div>
-        <div class="mContainer mRight">
-          <div class="mContent">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
+          <div className="mContainer mRight">
+            <div className="mContent">
+              <h2>2016</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
         </div>
       </div>

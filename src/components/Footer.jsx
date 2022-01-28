@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
 
       <div className="copyrightText">
-        &copy; 2020 Phantom, CleverProgrammer. All rights reserved.
+        &copy;2022 Phantom, CleverProgrammer. All rights reserved.
       </div>
     </div>
   );
