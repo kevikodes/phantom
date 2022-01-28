@@ -139,7 +139,11 @@
   padding: 20px;
 }
 .email {
-  border: 1px solid whitesmoke;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .email input {

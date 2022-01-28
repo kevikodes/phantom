@@ -12,23 +12,30 @@ const Home = ({ openseaURL, user }) => {
   return (
     <div className="home">
       <div className="homeTitle">Mint your very own Phantom NFT!</div>
-      <div className="homeImage">
-        <img src="images/ptm.png" alt="" />
-      </div>
-      {true && (
+      {!user && !address && (
+        <div className="homeImage">
+          <img src="images/ptm.png" alt="" />
+        </div>
+      )}
+      {!user && !address && (
         <div className="clock">
           <Counter />
         </div>
       )}
-      <div className="mintCard">{false && <Mint />}</div>
-      <p className="minting">Until minting starts!</p>
-      <p className="join">Join our waitlist today to be notified!</p>
-      <form className="email">
-        <input type="text" placeholder="ex: myname@example.com"></input>
-        <button className="submitButton" value="Submit">
-          Submit
-        </button>
-      </form>
+      <div className="mintCard">{address && user && <Mint />}</div>
+      {!user && !address && <p className="minting">Until minting starts!</p>}
+
+      {!user && !address && (
+        <form className="email">
+          <p className="join">Join our waitlist today to be notified!</p>
+          <div>
+            <input type="text" placeholder="ex: myname@example.com"></input>
+            <button className="submitButton" value="Submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      )}
     </div>
   );
 };
