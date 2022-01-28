@@ -9,24 +9,34 @@ import { signInWithGoogle } from "../utils/firebase/auth";
 const Home = ({ openseaURL, user }) => {
   const { address, connectWallet } = useWeb3();
   console.log(openseaURL);
+
   return (
     <div className="home">
       <div className="homeTitle">Get your very own Phantom NFT!</div>
       <div className="homeContainer">
-        {!user && !address && (
-          <div className="clock">
-            <Counter />
-          </div>
-        )}
-
-        {/* {!user && !address && (
-  <div className="homeImage">
-    <img src="images/ptm.png" alt="" height="50px" width="50px" />
-  </div>
-)} */}
-
         <div className="mintCard">{address && user && <Mint />}</div>
         {!user && !address && <p className="minting">Until NFT releases!</p>}
+        {!user && address && (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src="images/phantom-sunglasses.png"
+              alt="phantom with sunglasses"
+              height="300px"
+              width="300px"
+              style={{ marginBottom: "20px", marginLeft: "30px" }}
+            />
+            <button onClick={signInWithGoogle} className="googleAlertButton">
+              Sign In With Google
+            </button>
+          </div>
+        )}
 
         <form className="email">
           <p className="join">Join our whitelist today to be notified!</p>

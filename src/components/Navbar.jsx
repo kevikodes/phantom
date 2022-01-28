@@ -42,13 +42,13 @@ const Navbar = ({ user, walletAddress }) => {
               </div>
             </>
           )}
-          {!user && walletAddress && (
+          {/* {!user && walletAddress && (
             <>
               <div className="navMenuItem loginBtn" onClick={signInWithGoogle}>
-                Sign In with Google
+                Sign In With Google
               </div>
             </>
-          )}
+          )} */}
           {!walletAddress && user && (
             <>
               <div
