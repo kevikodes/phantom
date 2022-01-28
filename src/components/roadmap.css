@@ -54,6 +54,7 @@
 
 #date1 {
   /* color: red; */
+
   font-size: 20px;
   content: "";
   width: 100%;
@@ -89,13 +90,13 @@
 .date p {
   text-align: center;
   margin-top: 3px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   font-size: 10px;
 }
 
 .box .box-content {
-  /* border-radius: 5px; */
-  border: none;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9ab;
   background-color: none;
   width: 200px;
   position: absolute;
@@ -116,7 +117,8 @@
 .box-content p {
   margin: 0;
   color: rgba(255, 255, 255, 0.835);
-  padding: 10px;
+  text-shadow: 0 0 20px rgb(10, 230, 76), 0 0 20px rgba(10, 175, 230, 0);
+  text-align: center;
 }
 
 .box-content p:hover {

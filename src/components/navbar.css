@@ -86,5 +86,5 @@
 
 .navAvatar:hover {
   color: lime;
-  -webkit-text-stroke: 0.9px white;
+  -webkit-text-stroke: 0.9px black;
 }
