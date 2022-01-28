@@ -1,6 +1,6 @@
 import React from "react";
-import "./mobileroadmap.css";
-import "./roadmap.css";
+import "../styles/mobileroadmap.css";
+import "../styles/roadmap.css";
 
 const MobileRoadmap = () => {
   return (

@@ -1,6 +1,6 @@
 import moment from "moment";
 import React from "react";
-import "./newscard.css";
+import "../styles/newscard.css";
 
 const NewsCard = ({ link, image, title, content, date, provider }) => {
   return (

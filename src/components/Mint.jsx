@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 import { useWeb3 } from "@3rdweb/hooks";
-import "./mint.css";
+import "../styles/mint.css";
 
 const Mint = () => {
   const { address, provider } = useWeb3();

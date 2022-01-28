@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 import Counter from "../components/Counter";
 import Mint from "../components/Mint";
-import "./home.css";
+import "../styles/home.css";
 import { useWeb3 } from "@3rdweb/hooks";
 import { signInWithGoogle } from "../utils/firebase/auth";
 

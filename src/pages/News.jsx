@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import NewsCard from "../components/NewsCard";
-import "../components/newscard.css";
+import "../styles/newscard.css";
 
 const News = () => {
   const [newsData, setNewsData] = useState([]);

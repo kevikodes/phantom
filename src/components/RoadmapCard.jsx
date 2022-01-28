@@ -1,5 +1,5 @@
 import React from "react";
-import "./roadmap.css";
+import "../styles/roadmap.css";
 
 const RoadmapCard = () => {
   return (
