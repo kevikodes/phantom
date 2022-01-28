@@ -40,11 +40,11 @@
 }
 
 .faqQuestion {
-  font-weight: 800;
-  font-size: 1.6rem;
+  font-weight: 600;
+  font-size: 2rem;
   text-align: center;
   max-width: 80ch;
-  color: lime;
+  color: rgb(108, 255, 157);
 }
 
 .faqAnswer {
@@ -52,7 +52,7 @@
   line-height: 25px;
   max-width: 90ch;
   text-align: center;
-  line-height: 2rem;
-  font-size: 1.4rem;
-  color: rgb(169, 173, 170);
+  line-height: 2.3rem;
+  font-size: 1.6rem;
+  color: rgba(219, 221, 219, 0.938);
 }

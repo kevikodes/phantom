@@ -3,26 +3,21 @@ import RoadmapCard from "../components/RoadmapCard";
 import MobileRoadmap from "../components/MobileRoadmap";
 import { useState, useEffect } from "react";
 const RoadMap = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  const handleResize = () => {
-    if (window.innerWidth < 1200) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
+  const [isMobile, setIsMobile] = useState(null);
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
+    const handleResize = () => {
+      if (window.innerWidth < 1200) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+      return window.addEventListener("resize", handleResize);
     };
+    return handleResize();
   });
 
-  console.log(isMobile);
-
-  return <div>{isMobile ? <MobileRoadmap /> : <RoadmapCard />}</div>;
+  return <>{isMobile ? <MobileRoadmap /> : <RoadmapCard />}</>;
 };
 
 export default RoadMap;
