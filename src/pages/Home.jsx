@@ -106,6 +106,12 @@ const Home = ({ openseaURL, user }) => {
           </div>
         )}
 
+        {time <= release && (
+          <div className="phantom-logo">
+            <img src="images/cropped-ptm.png" alt="phantom logo" />
+          </div>
+        )}
+
         <form className="email">
           <p className="join">Join our whitelist today to get early access!</p>
           <div className="inputContainer">

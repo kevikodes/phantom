@@ -15,37 +15,19 @@ const RoadmapCard = () => {
           <div className="box box-top">
             <div className="date"></div>
             <div className="box-content">
-              <p className="boxPara">Lorem ipsum dolor sit amet consectetur.</p>
-              <p id="date1">Jul 1, 2021</p>
+              <p className="boxPara">
+                Donate to other projects and expand the community
+              </p>
+              <p id="date1">Nov 3 2022</p>
             </div>
           </div>
 
           <div className="box box-bottom">
             <div className="date"></div>
             <div className="box-content">
+              <p id="date1">Jul 15 2022</p>
               <p className="boxPara">
-                Lorem ipsum dolor sit amet, consectetur.
-              </p>
-              <p id="date1">Jun 1, 2021</p>
-            </div>
-          </div>
-
-          <div className="box box-top">
-            <div className="date"></div>
-            <div className="box-content">
-              <p className="boxPara">
-                Lorem ipsum dolor sit amet, consectetur.
-              </p>
-              <p id="date1">May 1, 2021</p>
-            </div>
-          </div>
-
-          <div className="box box-bottom">
-            <div className="date"></div>
-            <div className="box-content">
-              <p id="date1">Apr 1, 2021</p>
-              <p className="boxPara">
-                Lorem ipsum dolor sit amet, consectetur.
+                Developer and team members can now create their own projects
               </p>
             </div>
           </div>
@@ -54,18 +36,19 @@ const RoadmapCard = () => {
             <div className="date"></div>
             <div className="box-content">
               <p className="boxPara">
-                Lorem ipsum dolor sit amet, consectetur.
+                Create a members only section of the DAO
               </p>
-              <p id="date1">Mar 1, 2021</p>
+              <p id="date1">Apr 10 2022</p>
             </div>
           </div>
 
           <div className="box box-bottom">
             <div className="date"></div>
             <div className="box-content">
-              <p id="date1">Feb 1, 2021</p>
+              <p id="date1">Mar 24 2022</p>
               <p className="boxPara">
-                Lorem ipsum dolor sit amet, consectetur.
+                Vote to Donate to the DAO and get a chance to be a part of the
+                team
               </p>
             </div>
           </div>
@@ -74,9 +57,25 @@ const RoadmapCard = () => {
             <div className="date"></div>
             <div className="box-content">
               <p className="boxPara">
-                Lorem ipsum dolor sit amet, consectetur.
+                First round of the DAO whitelist and voting
               </p>
-              <p id="date1">Jan 1, 2021</p>
+              <p id="date1">Mar 3 2022</p>
+            </div>
+          </div>
+
+          <div className="box box-bottom">
+            <div className="date"></div>
+            <div className="box-content">
+              <p className="boxPara">Release of the PhantomDAO</p>
+              <p id="date1">Feb 20 2022</p>
+            </div>
+          </div>
+
+          <div className="box box-top">
+            <div className="date"></div>
+            <div className="box-content">
+              <p className="boxPara">Release first Phantom NFT.</p>
+              <p id="date1">Jan 30 2022</p>
             </div>
           </div>
         </section>
