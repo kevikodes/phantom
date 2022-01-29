@@ -31,7 +31,7 @@ const Home = ({ openseaURL, user }) => {
         <div className="clockContainer">
           <Clock
             className="clock"
-            format={"MMMM DD hh:mm:ss A"}
+            format={"MMMM DD h:mm:ss A"}
             ticking={true}
             timezone={"US/Pacific"}
           />
