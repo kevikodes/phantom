@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Navigate } from "react-router-dom";
-import Counter from "../components/Counter";
 import Mint from "../components/Mint";
 import "../styles/home.css";
 import { useWeb3 } from "@3rdweb/hooks";
@@ -14,7 +12,7 @@ const Home = ({ openseaURL, user }) => {
 
   //timestamp for when the user will be able to mint
   let release = parseInt(
-    moment("2022-01-28 20:47:00", "YYYY-MM-DD HH:mm:ss").unix().toFixed(3) *
+    moment("2022-01-30 12:30:00", "YYYY-MM-DD HH:mm:ss").unix().toFixed(3) *
       1000
   );
 
@@ -30,12 +28,23 @@ const Home = ({ openseaURL, user }) => {
     <div className="home">
       <div className="homeTitle">Get your very own Phantom NFT!</div>
       <div className="homeContainer">
-        <Clock
-          style={{ color: "white" }}
-          format={"MMMM Mo, YYYY, h:mm:ss A"}
-          ticking={true}
-          timezone={"US/Pacific"}
-        />
+        <div className="clockContainer">
+          <Clock
+            className="clock"
+            format={"MMMM DD hh:mm:ss A"}
+            ticking={true}
+            timezone={"US/Pacific"}
+          />
+        </div>
+        {!time >= release ? (
+          <div className="releaseDate">
+            <h2>This NFT releases on January </h2>
+          </div>
+        ) : (
+          <div>
+            <h2></h2>
+          </div>
+        )}
         <div className="mintCard">
           {address && (
             <div className="connectedWallet">
@@ -44,7 +53,6 @@ const Home = ({ openseaURL, user }) => {
             </div>
           )}
         </div>
-        {console.log(time, release)}
 
         {address && user && time >= release && (
           <div className="mintCard">

@@ -15,7 +15,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 30px 50px;
+  }
+  .navbarRight {
+    margin-right: 40px;
+    margin-left: 40px;
   }
   .navMenu {
     margin-top: -10px;
