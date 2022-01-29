@@ -36,9 +36,9 @@ const Home = ({ openseaURL, user }) => {
             timezone={"US/Pacific"}
           />
         </div>
-        {!time >= release ? (
+        {time <= release ? (
           <div className="releaseDate">
-            <h2>This NFT releases on January </h2>
+            <h2>This NFT releases on January 30th @ 12:30 PM PST!!!!</h2>
           </div>
         ) : (
           <div>
@@ -107,8 +107,8 @@ const Home = ({ openseaURL, user }) => {
         )}
 
         <form className="email">
-          <p className="join">Join our whitelist today to be notified!</p>
-          <div>
+          <p className="join">Join our whitelist today to get early access!</p>
+          <div className="inputContainer">
             <input type="text" placeholder="ex: myname@example.com"></input>
             <button className="submitButton" value="Submit">
               Submit

@@ -12,6 +12,7 @@
   flex-direction: column;
   border-radius: 10px;
   min-width: 60%;
+  max-width: 60%;
   min-height: 500px;
   margin-top: 50px;
   padding: 40px;
@@ -20,10 +21,24 @@
   -webkit-box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
   box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
   align-items: center;
-  justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+  .homeContainer {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    margin-top: 0;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.486);
+    border: 1px solid #fff;
+    -webkit-box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
+    box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
+    align-items: flex-start;
+    display: flex;
+  }
 }
 
-.googleAlertButton {
+.con .googleAlertButton {
   background-color: #ffffff;
   color: black;
   padding: 15px 32px;
@@ -51,15 +66,33 @@
   font-size: 3.5rem;
   text-align: center;
   font-family: "Sedgwick Ave", cursive;
+  width: 100%;
   /* font-family: "Creepster", cursive; */
   letter-spacing: 5px;
   color: #ffffff;
   background: #23232300;
-  text-shadow: 0 0 10px #ffffff, 2px 2px 2px rgba(5, 255, 0, 0.57);
+  text-shadow: 0 0 10px #51ff00, 2px 2px 2px rgba(5, 255, 0, 0.57);
   box-shadow: inset 0 0 10px rgba(45, 185, 3, 0.5),
     inset 0 0 20px rgba(45, 185, 3, 0.5), 0 0 20px rgba(255, 255, 255, 0.5),
     0 0 10px rgba(45, 185, 3, 0.5);
   padding: 10px;
+}
+
+.clockContainer {
+  width: 100%;
+}
+
+.releaseDate {
+  font-size: 1.5rem;
+  font-family: "Creepster", cursive;
+  color: #ffffff;
+  background: #23232300;
+  text-shadow: 0 0 10px #51ff00, 2px 2px 2px rgba(5, 255, 0, 0.57);
+  box-shadow: inset 0 0 10px rgba(45, 185, 3, 0.5),
+    inset 0 0 20px rgba(45, 185, 3, 0.5), 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(45, 185, 3, 0.5);
+  padding: 10px;
+  text-align: center;
 }
 
 .homeTitle {
@@ -209,6 +242,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .email input {
@@ -217,11 +251,20 @@
   padding: 15px;
 }
 
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
 .submitButton {
   width: 65px;
   padding: 7px;
   border: 1px solid whitesmoke;
-  margin-top: 25px;
 }
 
 .newInput input {
