@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Mint from "../components/Mint";
 import "../styles/home.css";
 import { useWeb3 } from "@3rdweb/hooks";
-import { signInWithGoogle } from "../utils/firebase/auth";
+import { signInWithGoogle, handleAuth } from "../utils/firebase/auth";
 import moment from "moment";
 import Clock from "react-live-clock";
 
@@ -28,14 +28,23 @@ const Home = ({ openseaURL, user }) => {
     <div className="home">
       <div className="homeTitle">Get your very own Phantom NFT!</div>
       <div className="homeContainer">
-        <div className="clockContainer">
-          <Clock
-            className="clock"
-            format={"MMMM DD h:mm:ss A"}
-            ticking={true}
-            timezone={"US/Pacific"}
-          />
-        </div>
+        {time <= release ? (
+          <div className="clockContainer">
+            <Clock
+              className="clock"
+              format={"MMMM DD h:mm:ss A"}
+              ticking={true}
+              timezone={"US/Pacific"}
+            />
+          </div>
+        ) : (
+          <h1
+            style={{ fontSize: "2rem", fontFamily: "Sedgwick Ave, cursive" }}
+            className="releaseDate"
+          >
+            The NFT has been released! Get yourself a Phantom!!!
+          </h1>
+        )}
         {time <= release ? (
           <div className="releaseDate">
             <h2>This NFT releases on January 30th @ 12:30 PM PST!!!!</h2>
@@ -106,10 +115,33 @@ const Home = ({ openseaURL, user }) => {
           </div>
         )}
 
-        {time <= release && (
+        {time <= release && !user && !address && (
           <div className="phantom-logo">
             <img src="images/cropped-ptm.png" alt="phantom logo" />
           </div>
+        )}
+
+        {time <= release && user && address && (
+          <div className="phantom-logo">
+            <img src="images/cropped-ptm.png" alt="phantom logo" />
+          </div>
+        )}
+
+        {time >= release && !user && !address && (
+          <>
+            <div className="phantom-logo">
+              <img src="images/cropped-ptm.png" alt="phantom logo" />
+            </div>
+            <h2 style={{ fontSize: "1.3rem", color: "white" }}>
+              You need to Login first!
+            </h2>
+            <button
+              className="googleAlertButton"
+              onClick={() => handleAuth(connectWallet)}
+            >
+              Login
+            </button>
+          </>
         )}
 
         <form className="email">
