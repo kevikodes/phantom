@@ -37,7 +37,6 @@ function App() {
     const unsub = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
     });
-    console.log(user);
 
     return unsub;
   }, [user]);
@@ -45,8 +44,8 @@ function App() {
   useEffect(() => {
     if (address) {
       setWalletAddress(address);
+      console.log(address);
     }
-    console.log(address);
   }, [address]);
   return (
     <div className="app">

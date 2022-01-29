@@ -24,7 +24,6 @@ const News = () => {
   };
 
   const input = useRef();
-  console.log(input.value);
 
   useEffect(() => {
     const fetchInitialNews = async () => {
@@ -88,7 +87,6 @@ const News = () => {
       <div className="newsContainer">
         {newsData &&
           newsData.map((news) => {
-            console.log(news);
             return (
               <NewsCard
                 key={Math.random()}

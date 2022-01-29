@@ -15,9 +15,9 @@ const NewsCard = ({ link, image, title, content, date, provider }) => {
 
             <div className="cardFooter">
               <span style={{ color: "white", fontSize: "0.8rem" }}>
-                - {provider}
+                -{provider}
               </span>
-              <br />
+
               <span className="cardPublishDate">
                 {moment(date).format("MMMM DD YYYY")}
               </span>

@@ -89,6 +89,12 @@
   letter-spacing: 5px;
 }
 
+.connectedWallet {
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Sedgwick Ave", cursive;
+}
+
 /* .homeTitle {
   color: white;
   font-size: 1.4rem;
