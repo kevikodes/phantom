@@ -26,11 +26,8 @@
     min-height: 100%;
     margin-top: 0;
     padding: 0px;
-    background-color: rgba(0, 0, 0, 0.486);
-    border: 1px solid #fff;
-    -webkit-box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
-    box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
-    align-items: flex-start;
+
+    align-items: center;
     display: flex;
   }
 }
@@ -89,9 +86,12 @@
 }
 
 .phantom-logo {
-  height: 400px;
+  height: 500px;
   width: 300px;
   margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .phantom-logo img {

@@ -59,6 +59,7 @@ const Faqs = () => {
       auctioned by Christie’s.`,
       id: 5,
     },
+
     {
       question: "More Information",
       answer: `Bitcoin’s primary use is as a virtual currency and store of value.`,
@@ -66,93 +67,94 @@ const Faqs = () => {
     },
     {
       question: "",
-      answer: `Ethereum is often referred to as the second most popular cryptocurrency, after Bitcoin. `,
+      answer: `Ethereum: is often referred to as the second most popular cryptocurrency, after Bitcoin. `,
       id: 7,
     },
 
     {
       question: "",
-      answer: `Blockchain, an open distributed ledger that records transactions.`,
+      answer: `Blockchain: an open distributed ledger that records transactions.`,
       id: 8,
     },
 
     {
       question: "",
-      answer: `NFT, A non-fungible token is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger. `,
+      answer: `NFT: A non-fungible token is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger. `,
       id: 9,
     },
     {
       question: "",
-      answer: `OpenSea, the largest NFT marketplace.`,
+      answer: `OpenSea: the largest NFT marketplace.`,
       id: 10,
     },
 
     {
       question: "",
-      answer: `Solidity is an object-oriented, high-level language for implementing smart contracts.`,
-      id: 11,
+      answer: `Solidity: is an object-oriented, high-level language for implementing smart contracts.`,
+      id: 12,
     },
 
     {
       question: "",
-      answer: ` CryptoCurrency, is a medium of exchange that is digital, encrypted and decentralized.  `,
-      id: 11,
+      answer: ` CryptoCurrency: is a medium of exchange that is digital, encrypted and decentralized.  `,
+      id: 13,
     },
 
     {
       question: "",
-      answer: ` CryptoCurrency, No central authority manages or maintains cryptocurrency value. Value is broadly distributed among a cryptocurrency's users via the internet. `,
-      id: 11,
+      answer: ` CryptoCurrency: No central authority manages or maintains cryptocurrency value. Value is broadly distributed among a cryptocurrency's users via the internet. `,
+      id: 14,
     },
 
     {
       question: "",
-      answer: ` Crypto, you can buy regular goods and services  `,
-      id: 11,
+      answer: ` Crypto: you can buy regular goods and services.  `,
+      id: 15,
     },
 
     {
       question: "",
-      answer: ` Asset Class, can be a investment, like stocks or precious metals, but also can be risky. `,
-      id: 11,
+      answer: ` Asset Class: can be a investment, like stocks or precious metals, but also can be risky. `,
+      id: 16,
     },
 
     {
       question: "",
-      answer: ` Crypto Wallet, money transfer, account, by telephone number, or QR code `,
-      id: 11,
+      answer: ` Crypto Wallet: money transfer, account, by telephone number, or QR code. `,
+      id: 17,
     },
 
     {
       question: "",
-      answer: ` Common Coins, Bitcoin, Ethereum and Dogecoin. `,
-      id: 11,
+      answer: ` Common Coins: Bitcoin, Ethereum and Dogecoin. `,
+      id: 18,
     },
 
     {
       question: "",
-      answer: ` Best Crypto Exchanges, January 2022, 		Binance.US `,
-      id: 11,
+      answer: ` Best Crypto Exchanges:  January 2022, 		Binance.US. `,
+      id: 19,
     },
 
     {
       question: "",
-      answer: ` Beginner, Exchanges, 		CoinBase `,
-      id: 11,
+      answer: ` Beginner Exchanges: CoinBase. `,
+      id: 20,
     },
 
     {
       question: "",
-      answer: ` More, Exchanges, bitFlyer, 	Bitstamp, Bittrex, Global, Crypto.com, Gate.io, Gemini, Kraken, KuCoin `,
-      id: 11,
+      answer: ` More Exchanges: bitFlyer, 	Bitstamp, Bittrex, Global, Crypto.com, Gate.io, Gemini, Kraken, KuCoin. `,
+      id: 21,
     },
 
     {
       question: "",
       answer: ` Exchange transaction fees, dependent on your purchase amount with convenience fee of 0.5%. `,
-      id: 11,
+      id: 22,
     },
   ]);
+
   return (
     <div className="faqWrapper">
       <h1 className="faqTitle">Frequently Asked Questions</h1>
