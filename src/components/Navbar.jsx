@@ -2,7 +2,11 @@ import React from "react";
 import "../styles/navbar.css";
 import { NavLink } from "react-router-dom";
 
-import { handleAuth, handleLogout } from "../utils/firebase/auth";
+import {
+  handleAuth,
+  handleLogout,
+  signInWithGoogle,
+} from "../utils/firebase/auth";
 import { useWeb3 } from "@3rdweb/hooks";
 const Navbar = ({ user, walletAddress }) => {
   const { connectWallet, disconnectWallet } = useWeb3();
@@ -29,27 +33,42 @@ const Navbar = ({ user, walletAddress }) => {
               FAQ's
             </NavLink>
 
-            {!user && !walletAddress && (
+            {!walletAddress && !user && (
               <>
+                <i className="fas fa-user-circle navAvatar navMenuItem"></i>
                 <div
                   className="navMenuItem loginBtn"
                   onClick={() => handleAuth(connectWallet)}
                 >
-                  MetaMask Login
+                  Login
+                </div>
+              </>
+            )}
+
+            {walletAddress && !user && (
+              <>
+                <i className="fas fa-user-circle navAvatar navMenuItem"></i>
+                <div
+                  className="navMenuItem loginBtn"
+                  onClick={() => handleAuth(connectWallet)}
+                >
+                  Login
                 </div>
               </>
             )}
 
             {!walletAddress && user && (
               <>
+                <i className="fas fa-user-circle navAvatar navMenuItem"></i>
                 <div
                   className="navMenuItem loginBtn"
                   onClick={() => handleAuth(connectWallet)}
                 >
-                  Connect Wallet!
+                  Connect Wallet
                 </div>
               </>
             )}
+
             {walletAddress && user && (
               <>
                 <i className="fas fa-user-circle navAvatar navMenuItem"></i>
