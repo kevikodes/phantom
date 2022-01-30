@@ -43,6 +43,9 @@
   font-weight: 600;
   text-align: center;
   color: white;
+  text-shadow: 4px 3px 11px #98ff82;
+  font-family: "Sedgwick Ave", cursive;
+  letter-spacing: 2px;
 }
 
 .cardImage {
