@@ -4,6 +4,7 @@ import NewsCard from "../components/NewsCard";
 import "../styles/newscard.css";
 
 const News = () => {
+  //state to store newsData
   const [newsData, setNewsData] = useState([]);
   //State for search input
   const [query, setQuery] = useState("Crytpocurrency");

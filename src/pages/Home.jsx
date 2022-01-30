@@ -28,6 +28,8 @@ const Home = ({ openseaURL, user }) => {
     <div className="home">
       <div className="homeTitle">Get your very own Phantom NFT!</div>
       <div className="homeContainer">
+        {/* //Show the live PST clock when the nft is not released yet, otherwise
+        show the nft released */}
         {time <= release ? (
           <div className="clockContainer">
             <Clock
@@ -45,16 +47,14 @@ const Home = ({ openseaURL, user }) => {
             The NFT has been released! Get yourself a Phantom!!!
           </h1>
         )}
-        {time <= release ? (
+        {/* //Display the release date if the nft is not released yet */}
+        {time <= release && (
           <div className="releaseDate">
             <h2>This NFT releases on January 30th @ 12:30 PM PST!!!!</h2>
           </div>
-        ) : (
-          <div>
-            <h2></h2>
-          </div>
         )}
         <div className="mintCard">
+          {/* //Show the users currently connected account on the page. */}
           {address && (
             <div className="connectedWallet">
               <h2>Current Wallet Connected:</h2>
@@ -62,13 +62,15 @@ const Home = ({ openseaURL, user }) => {
             </div>
           )}
         </div>
-
+        {/* //Show the mint component if the user is signed in, wallet connected,
+        and the release time is true */}
         {address && user && time >= release && (
           <div className="mintCard">
             <Mint openseaURL={openseaURL} user={user} />
           </div>
         )}
-
+        {/* //If the use is not signed in with google but wallet is connected show a
+        button to sign into google. */}
         {!user && address && (
           <div
             style={{
@@ -90,6 +92,8 @@ const Home = ({ openseaURL, user }) => {
             </button>
           </div>
         )}
+        {/* //If the user is signed in but the wallet is not connected show a button
+        to connect Wallet */}
         {user && !address && (
           <div
             style={{
@@ -114,19 +118,20 @@ const Home = ({ openseaURL, user }) => {
             </button>
           </div>
         )}
-
+        {/* //show the phantom logo if the release hasnt happened and the user is
+        not logged in with wallet or google. */}
         {time <= release && !user && !address && (
           <div className="phantom-logo">
             <img src="images/cropped-ptm.png" alt="phantom logo" />
           </div>
         )}
-
+        {/* //show the phantom logo if the release hasnt happened and the user is
+        logged in with wallet or google. */}
         {time <= release && user && address && (
           <div className="phantom-logo">
             <img src="images/cropped-ptm.png" alt="phantom logo" />
           </div>
         )}
-
         {time >= release && !user && !address && (
           <>
             <div className="phantom-logo">
@@ -143,7 +148,6 @@ const Home = ({ openseaURL, user }) => {
             </button>
           </>
         )}
-
         <form className="email">
           <p className="join">Join our whitelist today to get early access!</p>
           <div className="inputContainer">

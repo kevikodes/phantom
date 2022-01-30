@@ -1,8 +1,12 @@
+//React imports
 import React, { useState } from "react";
+//Import components
 import Faq from "../components/Faq";
+//Import Styles
 import "../styles/faq.css";
 
 const Faqs = () => {
+  //Set a state for the FAQs
   const [faqs, setFaqs] = useState([
     {
       question: "What is an NFT? Is it a cryptocurrency?",
@@ -159,6 +163,7 @@ const Faqs = () => {
     <div className="faqWrapper">
       <h1 className="faqTitle">Frequently Asked Questions</h1>
       <div className="darkGlassCard faqContainer">
+        {/* //Map through the FAQs and display them */}
         {faqs.map((faq) => {
           return (
             <Faq key={faq.id} question={faq.question} answer={faq.answer} />
