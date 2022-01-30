@@ -59,10 +59,10 @@
   color: white;
   font-size: 3.5rem;
   text-align: center;
-  font-family: "Sedgwick Ave", cursive;
+
   width: 100%;
   /* font-family: "Creepster", cursive; */
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   color: #ffffff;
   background: #23232300;
   text-shadow: 0 0 10px #51ff00, 2px 2px 2px rgba(5, 255, 0, 0.57);
@@ -123,8 +123,8 @@
   justify-content: center;
   display: flex;
   margin-top: 100px;
-  font-family: "Sedgwick Ave", cursive;
-  letter-spacing: 5px;
+
+  letter-spacing: 2px;
   text-align: center;
   text-shadow: 4px 3px 11px #98ff82;
   font-weight: 500;
@@ -153,14 +153,13 @@
   /* bottom: -550px; */
   color: whitesmoke;
   text-align: center;
-  font-family: "Sedgwick Ave", cursive;
+
   letter-spacing: 5px;
 }
 
 .connectedWallet {
   color: whitesmoke;
   text-align: center;
-  font-family: "Sedgwick Ave", cursive;
   margin-bottom: 20px;
 }
 
