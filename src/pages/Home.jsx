@@ -59,6 +59,9 @@ const Home = ({ openseaURL, user }) => {
             <div className="connectedWallet">
               <h2>Current Wallet Connected:</h2>
               <p>{address}</p>
+              <a href={openseaURL} target="_blank" rel="noopener noreferrer">
+                <button className="opensea-button">Your Opensea Link</button>
+              </a>
             </div>
           )}
         </div>

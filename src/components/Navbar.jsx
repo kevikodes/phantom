@@ -2,11 +2,7 @@ import React from "react";
 import "../styles/navbar.css";
 import { NavLink } from "react-router-dom";
 
-import {
-  handleAuth,
-  handleLogout,
-  signInWithGoogle,
-} from "../utils/firebase/auth";
+import { handleAuth, handleLogout } from "../utils/firebase/auth";
 import { useWeb3 } from "@3rdweb/hooks";
 const Navbar = ({ user, walletAddress }) => {
   const { connectWallet, disconnectWallet } = useWeb3();
@@ -43,13 +39,7 @@ const Navbar = ({ user, walletAddress }) => {
                 </div>
               </>
             )}
-            {/* {!user && walletAddress && (
-            <>
-              <div className="navMenuItem loginBtn" onClick={signInWithGoogle}>
-                Sign In With Google
-              </div>
-            </>
-          )} */}
+
             {!walletAddress && user && (
               <>
                 <div

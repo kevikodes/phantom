@@ -164,6 +164,22 @@
   margin-bottom: 20px;
 }
 
+.opensea-button {
+  background-color: #ffffff;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
 /* .homeTitle {
   color: white;
   font-size: 1.4rem;
