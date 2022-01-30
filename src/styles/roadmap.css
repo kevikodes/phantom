@@ -11,6 +11,7 @@
   box-shadow: 1px 1px 33px 8px rgba(206, 255, 204, 0.86);
   padding: 2rem;
   border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.527);
 }
 
 .roadmapTitle {
