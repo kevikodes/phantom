@@ -76,6 +76,7 @@ const News = () => {
           <label>
             {/* Search: */}
             <input
+              placeholder="Search for latest news..."
               type="text"
               //   onChange={(e) => setNewsData(e.target.value)}
               ref={input}
