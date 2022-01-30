@@ -27,6 +27,7 @@
     align-items: center;
     display: flex;
   }
+
   .navbarWrapper {
     display: flex;
     flex-direction: column;
