@@ -63,7 +63,7 @@ const Home = ({ openseaURL, user }) => {
           )}
         </div>
 
-        {address && user && time <= release && (
+        {address && user && time >= release && (
           <div className="mintCard">
             <Mint openseaURL={openseaURL} user={user} />
           </div>
